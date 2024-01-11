@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nishu</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #cake {
+            position: relative;
+            width: 700px;
+            height: 700px;
+            background-color: #ffdb58;
+            border-radius: 50%;
+            overflow: hidden;
+            animation: cakeAnimation 3s infinite alternate;
+        }
+
+        #candle {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15px;
+            height: 60px;
+            background-color: #ffac33;
+            border-radius: 2px;
+        }
+
+        #flame {
+            position: absolute;
+            bottom: 60px;
+            left: 48%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: #ffac33;
+            border-radius: 50%;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: flameAnimation 0.5s infinite alternate;
+        }
+
+        #message {
+            position: absolute;
+            top: 35%;
+            left: 0%;
+            transform: translate(-50%, -50%); /* Center the message */
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 90px;
+            opacity: 0;
+            animation: fadeIn 2s forwards, bounceMessage 2s infinite alternate;
+            color: #333;
+            transition: color 1s ease-in-out;
+        }
+
+        #Happy {
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%,-50%);
+            animation: fadeIn 2s forwards, bounce 2s infinite alternate;
+            transition: color 1s ease-in-out;
+        }
+        #Happy1 {
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%,-50%);
+            animation: fadeIn 2s forwards, bounce1 2s infinite alternate;
+            transition: color 1s ease-in-out;
+        }
+        #pic{
+            opacity: 30%;
+        }
+
+        @keyframes cakeAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes flameAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceMessage {
+            0%, 100% {
+                transform: translateY(0);
+                color: #4392a3;
+            }
+            50% {
+                transform: translateY(-10px);
+                color: #e74c3c; /* Bold color */
+            }
+          }
+
+          @keyframes bounce {
+            0%, 100% {
+                transform: translateY(150px);
+                 
+            }
+            100% {
+                transform: translateY(-150px);
+                
+            }
+        }
+
+            @keyframes bounce1 {
+            0%, 100% {
+                transform: translateY(-150px);
+                color: #4392a3;
+            }
+            100% {
+                transform: translateY(150px);
+                color: #e74c3c; /* Bold color */
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <img src="android.png" alt="" width="320" id="Happy">
+        </tr>
+        <tr>
+    <div id="cake">
+        <div id="candle"></div>
+        <div id="flame"></div>
+        <div id="message">Happy Birthday My Love❤️</div>
+        
+        <img  src="img2/IMG-20221025-WA0008.jpg" alt="" width="560" id="pic">
+    </div>
+</tr>
+<tr>
+    <img src="android.png" alt=""  width="320" id="Happy1">
+    
+</tr>
+
+</table>
+</body>
+</html>
